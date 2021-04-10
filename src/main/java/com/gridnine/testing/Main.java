@@ -23,7 +23,7 @@ public class Main {
 			String s = scanner.nextLine();
 			if(s.equals("4")) {
 				System.out.print("Завершение работы...");
-				System.exit(0);
+				return;
 			}
 			String[] idS = s.split(" ");
 			int num = idS.length;
@@ -41,14 +41,9 @@ public class Main {
 			}
 			if(trig){
 				System.out.print("Завершение работы...");
-				System.exit(1);
+				return;
 			}
 		}
 	}
 	
-	private static void exit() {
-		System.out.print("Завершение работы...");
-		
-	}
-
 }
